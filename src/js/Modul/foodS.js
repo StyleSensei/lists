@@ -1,32 +1,27 @@
-
-//import './listS.js'
-
-// function Food(spacy, mild, sweet){
-//     this.spacy = spacy;
-//     this.mild = mild;
-//     this.sweet = sweet;
-
-//     console.log("spacy","mild", "sweet");
-
-// }
-
-// window.onload = funktion(){
-//     const tasteDiv = document.get
-
-// }
 export class Food {
-    spacy;
-    mild; 
-    sweet;
-    constructor (spacy, mild, sweet){
-        this.spacy= sp;
-        this.mild = m;
-        this.sweet= sw;
+  spacy;
+  mild;
+  sweet;
 
-    }
+  constructor(spacy, mild, sweet) {
+    this.spacy = spacy;
+    this.mild = mild;
+    this.sweet = sweet;
+  }
 }
 
-const food1 = new Food('sp', 'm',sw);
+// window.onload = function(){
+const food1 = new Food("spacy", "mild", "sweet");
 console.log(food1);
+// skapa en div
+const tasteDiv = document.createElement("div");
+let foodString = "spacy:" + food1.spacy + "<br>";
+outputString = "mild:" + food1.mild + "<br>";
+outputString += "sweet:" + food1.sweet + "<br>";
 
+console.log("");
 
+tasteDiv.innerHTML = foodString;
+console("food1");
+
+//const tasteDiv = [new Food("spacy"), new Food("mild"), new Food("sweet")];
