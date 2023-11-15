@@ -2,12 +2,12 @@
 export class CarBrand {
   brand;
   year;
-  price;
+  image;
 
-  constructor(brand, year, price) {
+  constructor(brand, year, image) {
     this.brand = brand;
     this.year = year;
-    this.price = price;
+    this.image = image;
   }
 
 }
