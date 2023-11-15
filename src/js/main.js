@@ -88,4 +88,26 @@ const pony3 = new Pony("https://static.wikia.nocookie.net/p__/images/c/c7/Twilig
   const ponies = [pony, pony2, pony3];
   for (let i = 0; i < ponies.length; i++) {
     createHtmlForPony(ponies[i]);
+  }import './../scss/main.scss';
+
+export class Food {
+  spacy;
+  mild;
+  sweet;
+  constructor(spacy, mild, sweet) {
+    this.spacy = spacy;
+    this.mild = mild;
+    this.sweet = sweet;
   }
+}
+// window.onload = function(){
+const food1 = new Food("Very hot", "mild", "sweet");
+console.log(food1);
+
+// skapa en div
+const tasteDiv = document.createElement("div");
+tasteDiv.innerHTML = food1.spacy;
+tasteDiv.innerHTML = food1.mild;
+tasteDiv.innerHTML =food1.sweet;
+
+document.body.appendChild(tasteDiv);
